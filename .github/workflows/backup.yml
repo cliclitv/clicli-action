@@ -1,4 +1,4 @@
-name: 'GitHub Actions Weather Bot'
+name: 'Clicli mysql backup'
 
 on:
   push:
@@ -9,8 +9,7 @@ jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout codes'
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: 'Backup'
       - uses: appleboy/ssh-action@master
         with:
